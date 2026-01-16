@@ -3,7 +3,7 @@
 // Define preferred palette for light and dark mode
 // Available themes: latte, frappe, mocha, macchiato
 const preferredLightTheme = latte;
-const preferredDarkTheme = mocha;
+const preferredDarkTheme = macchiato;
 
 let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 
@@ -19,7 +19,7 @@ const default_configuration = {
   },
   additionalClocks: [
     {
-      label: "UA",
+      label: "",
       timezone: "Europe/Madrid",
       format: "h:i",
       icon_color: palette.peach,
@@ -44,7 +44,7 @@ const default_configuration = {
   tabs: [
     {
       name: "myself",
-      background_url: "src/img/banners/banner_09.gif",
+      background_url: "src/img/banners/banner_11.gif",
       categories: [
         {
           name: "bookmarks",
@@ -60,6 +60,12 @@ const default_configuration = {
               url: "https://musicforprogramming.net",
               icon: "binary-tree",
               icon_color: palette.peach,
+            },
+            {
+              name: "freemediaheckyeah",
+              url: "https://fmhy.net",
+              icon: "star",
+              icon_color: palette.red,
             },
           ],
         },
@@ -96,32 +102,32 @@ const default_configuration = {
           name: "media",
           links: [
             {
-              name: "уп",
-              url: "https://www.pravda.com.ua",
+              name: "news",
+              url: "https://newsasfacts.com/",
               icon: "news",
               icon_color: palette.green,
             },
             {
-              name: "mil.in.ua",
-              url: "https://mil.in.ua",
+              name: "ars technica",
+              url: "https://arstechnica.com/",
               icon: "badge-filled",
               icon_color: palette.peach,
             },
             {
-              name: "куток",
-              url: "https://kutok.io",
+              name: "deadstack",
+              url: "https://deadstack.net/",
               icon: "border-radius",
               icon_color: palette.red,
             },
             {
-              name: "ґрунт",
-              url: "https://grnt.media",
+              name: "science news",
+              url: "https://phys.org/",
               icon: "eye-bolt",
               icon_color: palette.blue,
             },
             {
-              name: "village",
-              url: "https://www.village.com.ua",
+              name: "ground news",
+              url: "https://ground.news/",
               icon: "home-2",
               icon_color: palette.mauve,
             },
@@ -131,7 +137,7 @@ const default_configuration = {
     },
     {
       name: "dev",
-      background_url: "src/img/banners/banner_07.gif",
+      background_url: "src/img/banners/banner_06.gif",
       categories: [
         {
           name: "development",
@@ -142,52 +148,34 @@ const default_configuration = {
               icon: "brand-github",
               icon_color: palette.green,
             },
-            {
-              name: "stackoverflow",
-              url: "https://stackoverflow.com",
-              icon: "brand-stackoverflow",
-              icon_color: palette.peach,
-            },
-            {
-              name: "duckdb",
-              url: "https://app.motherduck.com",
-              icon: "file-type-sql",
-              icon_color: palette.red,
-            },
-            {
-              name: "collab",
-              url: "https://colab.research.google.com",
-              icon: "notebook",
-              icon_color: palette.mauve,
-            },
+            // {
+            //   name: "stackoverflow",
+            //   url: "https://stackoverflow.com",
+            //   icon: "brand-stackoverflow",
+            //   icon_color: palette.peach,
+            // },
+            // {
+            //   name: "duckdb",
+            //   url: "https://app.motherduck.com",
+            //   icon: "file-type-sql",
+            //   icon_color: palette.red,
+            // },
+            // {
+            //   name: "collab",
+            //   url: "https://colab.research.google.com",
+            //   icon: "notebook",
+            //   icon_color: palette.mauve,
+            // },
           ],
         },
         {
           name: "challenges",
           links: [
             {
-              name: "kaggle",
-              url: "https://www.kaggle.com",
-              icon: "brain",
-              icon_color: palette.green,
-            },
-            {
               name: "leetcode",
               url: "https://leetcode.com",
               icon: "code-plus",
-              icon_color: palette.peach,
-            },
-            {
-              name: "exercism",
-              url: "https://exercism.org",
-              icon: "code-minus",
-              icon_color: palette.red,
-            },
-            {
-              name: "aoc",
-              url: "https://adventofcode.com",
-              icon: "brand-linktree",
-              icon_color: palette.blue,
+              icon_color: palette.green,
             },
           ],
         },
@@ -195,9 +183,9 @@ const default_configuration = {
           name: "resources",
           links: [
             {
-              name: "dou",
-              url: "https://dou.ua",
-              icon: "brand-prisma",
+              name: "devdocs",
+              url: "https://devdocs.io/",
+              icon: "api",
               icon_color: palette.green,
             },
             {
@@ -207,14 +195,14 @@ const default_configuration = {
               icon_color: palette.peach,
             },
             {
-              name: "uber engineering",
-              url: "https://www.uber.com/en-GB/blog/london/engineering",
+              name: "free-for.dev",
+              url: "https://free-for.dev/",
               icon: "brand-uber",
               icon_color: palette.red,
             },
             {
-              name: "netflix tech blog",
-              url: "https://netflixtechblog.com",
+              name: "appdevtools",
+              url: "https://appdevtools.com/",
               icon: "brand-netflix",
               icon_color: palette.blue,
             },
@@ -227,26 +215,26 @@ const default_configuration = {
       background_url: "src/img/banners/banner_08.gif",
       categories: [
         {
-          name: "social media",
+          name: "reading",
           links: [
             {
-              name: "telegram",
-              url: "https://web.telegram.org",
-              icon: "brand-telegram",
+              name: "goodreads",
+              url: "https://www.goodreads.com/",
+              icon: "book",
               icon_color: palette.green,
             },
-            {
-              name: "facebook",
-              url: "https://www.facebook.com",
-              icon: "brand-facebook",
-              icon_color: palette.peach,
-            },
-            {
-              name: "reddit",
-              url: "https://www.reddit.com/r/unixporn",
-              icon: "brand-reddit",
-              icon_color: palette.red,
-            },
+            // {
+            //   name: "facebook",
+            //   url: "https://www.facebook.com",
+            //   icon: "brand-facebook",
+            //   icon_color: palette.peach,
+            // },
+            // {
+            //   name: "reddit",
+            //   url: "https://www.reddit.com/r/unixporn",
+            //   icon: "brand-reddit",
+            //   icon_color: palette.red,
+            // },
           ],
         },
         {
@@ -265,17 +253,17 @@ const default_configuration = {
               icon_color: palette.peach,
             },
             {
-              name: "epicgames",
-              url: "https://store.epicgames.com",
+              name: "boardGameGeek",
+              url: "https://boardgamegeek.com/",
               icon: "brand-fortnite",
               icon_color: palette.red,
             },
-            {
-              name: "nintendo",
-              url: "https://store.nintendo.co.uk",
-              icon: "device-nintendo",
-              icon_color: palette.blue,
-            },
+            // {
+            //   name: "nintendo",
+            //   url: "https://store.nintendo.co.uk",
+            //   icon: "device-nintendo",
+            //   icon_color: palette.blue,
+            // },
           ],
         },
         {
@@ -293,18 +281,18 @@ const default_configuration = {
               icon: "brand-youtube",
               icon_color: palette.peach,
             },
-            {
-              name: "patreon",
-              url: "https://www.patreon.com",
-              icon: "brand-patreon",
-              icon_color: palette.red,
-            },
-            {
-              name: "kyivstar",
-              url: "https://tv.kyivstar.ua",
-              icon: "star-filled",
-              icon_color: palette.blue,
-            },
+            // {
+            //   name: "patreon",
+            //   url: "https://www.patreon.com",
+            //   icon: "brand-patreon",
+            //   icon_color: palette.red,
+            // },
+            // {
+            //   name: "kyivstar",
+            //   url: "https://tv.kyivstar.ua",
+            //   icon: "star-filled",
+            //   icon_color: palette.blue,
+            // },
           ],
         },
       ],
